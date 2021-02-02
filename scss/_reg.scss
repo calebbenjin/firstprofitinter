@@ -1,0 +1,216 @@
+
+
+// .reg {
+//   width: 40%;
+//   height: auto;
+//   margin: 0 auto;
+//   box-shadow: $light-shadow;
+//   border-radius: $borderRadius;
+//   background: $whiteColor;
+//   .nav {
+//     display: flex;
+//     justify-content: space-between;
+//     text-align: center;
+//     height: 4rem;
+//     // margin-bottom: -0rem;
+//     a:nth-of-type(1) {
+//       padding: 15px 2rem;
+//       text-align: center;
+//       color: #333;
+//       width: 100%;
+//       border-top-left-radius: $borderRadius;
+//       transition: $transition;
+//       font-size: medium;
+//       font-weight: $boldFont;
+//       border: solid 2px $greyColor;
+//       border-bottom: none;
+//     }
+//     a:nth-of-type(2) {
+//       padding: 15px 2rem;
+//       text-align: center;
+//       font-weight: $boldFont;
+//       color: $darkColor;
+//       font-size: medium;
+//       width: 100%;
+//       border-top-right-radius: $borderRadius;
+//       border-bottom: solid 2px $greyColor;
+//     }
+    
+//   }
+
+//   .login {
+//     .form-title {
+//       text-align: center;
+//       font-weight: $boldFont;
+//       margin: 1rem 0;
+//       font-family: $ff-secondary;
+//       color: $fontGreyColor;
+//       font-size: larger;
+//     }
+//     .form-logo {
+//       width: 25%;
+//       height: auto;
+//       margin: 0 auto;
+//       padding-top: 2rem;
+//     }
+//     .form-body {
+//       border: solid 2px $greyColor;
+//       // border-radius: $borderRadius;
+//       border-top: none;
+//       form {
+//         padding: 2rem 2rem;
+//       }
+//     }
+//     button {
+//       display: block;
+//       width: 100%;
+//       padding: 10px;
+//       font-weight: bold;
+//       background: $primaryColor;
+//       border-radius: $borderRadius;
+//       border: transparent;
+//       font-size: medium;
+//       color: $whiteColor;
+//       transition: $transition;
+//       &:hover {
+//         background: transparent;
+//         border: solid 1px $primaryColor;
+//         color: $primaryColor;
+//       }
+//     }
+//     form .form-group {
+//       margin-bottom: 1.5rem;
+//       .input-icons {
+//         position: relative;
+//         i {
+//           position: absolute;
+//           padding: 13px 10px;
+//           color: $fontGreyColor;
+//         }
+//       }
+//       label {
+//         font-size: small;
+//         font-weight: $boldFont;
+//       }
+//       .label {
+//         display: flex;
+//         justify-content: space-between;
+//         a {
+//           color: $primaryColor;
+//         }
+//       }
+//       input{
+//         display: block;
+//         width: 100%;
+//         padding: 10px 30px;
+//         font-size: medium;
+//         border: solid 1px $greyColor;
+//         border-radius: $borderRadius;
+//         margin-top: 5px;
+//         transition: $transition;
+//         &[type=password]::placeholder{
+//           padding-left: 1px;
+//         }
+//         &:focus {
+//           border: none;
+//           outline: none;
+//           border: 1px solid $primaryColor;
+//         }
+//       }
+//     } 
+//   }
+//   .drop {
+//     display: flex;
+//     align-items: center;
+//     .privacy-details {
+//       margin-left: -1rem;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 768px) {
+//   .form {
+//     width: 100%;
+//     .nav {
+//       margin-bottom: 1rem;
+//     }
+//   }
+//   .circle-grey {
+//     width: 700px;
+//     height: 700px;
+//     border-radius: 50%;
+//     background: #f0f0f0ee;
+//     z-index: -2;
+//     position: fixed;
+//     left: -6rem;
+//     bottom: -15rem;
+//   }
+//   .circle-red {
+//     width: 600px;
+//     height: 600px;
+//     border-radius: 50%;
+//     background: #f5adad2a;
+//     z-index: -2;
+//     position: fixed;
+//     right: -6rem;
+//     bottom: 2rem;
+//   }
+// }
+
+// .circle-grey {
+//   width: 700px;
+//   height: 700px;
+//   border-radius: 50%;
+//   background: #f0f0f0ee;
+//   z-index: -2;
+//   position: fixed;
+//   left: -6rem;
+//   bottom: -15rem;
+// }
+// .circle-red {
+//   width: 600px;
+//   height: 600px;
+//   border-radius: 50%;
+//   background: #f5adad2a;
+//   z-index: -2;
+//   position: fixed;
+//   right: -6rem;
+//   bottom: 2rem;
+// }
+
+// @media screen and (max-width: 768px) {
+//   .form {
+//     width: 100%;
+//     .login {
+//       .form-title {
+//         text-align: center;
+//         font-weight: $boldFont;
+//         margin-bottom: 1rem;
+//         margin-top: -1rem;
+//         font-family: $ff-secondary;
+//         color: $fontGreyColor;
+//         font-size: larger;
+//       }
+//     }
+//   }
+//   .circle-grey {
+//     width: 400px;
+//     height: 400px;
+//     border-radius: 50%;
+//     background: #f0f0f0ee;
+//     z-index: -2;
+//     position: fixed;
+//     left: -6rem;
+//     bottom: -8rem;
+//   }
+//   .circle-red {
+//     width: 300px;
+//     height: 300px;
+//     border-radius: 50%;
+//     background: #f5adad2a;
+//     z-index: -2;
+//     position: fixed;
+//     right: -6rem;
+//     top: 2rem;
+//   }
+// }

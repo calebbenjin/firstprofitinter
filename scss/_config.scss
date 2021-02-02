@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Sans+Pro:wght@700&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Variables
+// =============================
+
+$primaryColor: #eb2323;
+$yellowColor: #EDC409;
+$secondaryColorGrey: #EBEDEE;
+$secondaryColor: #00263F;
+$greyColor: #BDBDBD;
+$lightGrey: #eeeeee;
+$whiteColor: #FFFF;
+$darkColor: #333;
+$fontGreyColor: #454545;
+$fontLightColor: #fff;
+$transparentColor: #161515b6;
+$ff-primary: 'Montserrat', sans-serif;
+$ff-secondary: 'Source Sans Pro', sans-serif;
+$boldFont: 900;
+$lightFont: 400;
+$maxWidth: 1100px;
+$borderRadius: 5px;
+$transition: all 0.3s linear;
+$spacing: 0.2rem;
+$radius: 0.35rem;
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+$max-width: 1170px;
+$fixed-width: 700px;
+$smallFont: 0.95rem;
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+body {
+  font-family: $ff-primary;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  background: $lightGrey;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  // letter-spacing: $spacing;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  // text-shadow:  0px 4px 15px rgba(0, 6, 12, 0.3);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  // margin-bottom: 1.25rem;
+  // color: #333;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+// toggle switch button
+$toggle-background-color-on: $greyColor;
+$toggle-background-color-off: $darkColor;
+$toggle-control-color: white;
+$toggle-width: 30px;
+$toggle-width-sm: 20px!important;
+$toggle-height-sm: 9px!important;
+$toggle-height: 14px;
+$toggle-gutter: 1px;
+$toggle-radius: 50%;
+$toggle-control-speed: .15s;
+$toggle-control-ease: ease-in;
+
+// These are our computed variables
+$toggle-radius: $toggle-height / 2;
+$toggle-control-size: $toggle-height - ($toggle-gutter * 2);
+$toggle-control-size-sm: $toggle-height-sm - ($toggle-gutter * 1);
+
+//Set text color based on background
+@function setTextColor($color) {
+  @if (lightness($color) < 50) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Set background & text color
+@mixin setBackground($color) {
+  background-color: $color;
+  color: setTextColor($color);
+}

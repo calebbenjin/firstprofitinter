@@ -1,0 +1,36 @@
+main {
+  position: relative
+}
+
+/* section */
+.section {
+  padding: 4rem 2rem;
+}
+
+.section-center {
+  width: 75vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+@media screen and (min-width: 676px) {
+  .grid-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .grid-center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
