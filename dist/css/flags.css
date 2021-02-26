@@ -1,4 +1,4 @@
-.flags { background: url('/dist/img/flagSprite.png') no-repeat top left; width: 100%; display:inline-block; height: 24px;  padding-left:37px; line-height:25px; margin-bottom:6px; } 
+.flags { background: url(../img/flagSprite.png) no-repeat top left; width: 100%; display:inline-block; height: 24px;  padding-left:37px; line-height:25px; margin-bottom:6px; } 
 .flags.rwa { background-position: 0 0; } 
 .flags.sau { background-position: 0 -34px; } 
 .flags.sdn { background-position: 0 -68px; } 
